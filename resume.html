@@ -4,103 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- ✏️ แก้ชื่อที่โชว์บนแท็บเบราว์เซอร์ -->
-  <title>★ welcome to my page ★</title>
+  <title>// PERSONAL_FILE.EXE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=VT323&family=Mali:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Share+Tech+Mono&family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ตัวหนังสือวิ่งด้านบน -->
-  <div class="ticker">
-    <!-- ✏️ แก้ข้อความที่วิ่งได้ -->
-    <div class="ticker-inner">
-      <span>♪ welcome to my homepage ♪ guitar ✦ drawing ✦ music ✦ good vibes only ♪ welcome to my homepage ♪ guitar ✦ drawing ✦ music ✦ good vibes only</span>
-    </div>
+  <!-- แถบสถานะด้านบน -->
+  <div class="statusbar">
+    <span class="dot"></span>
+    <!-- ✏️ แก้ข้อความแถบสถานะ -->
+    <span>SYSTEM ONLINE</span>
+    <div class="ticker"><div class="ticker-inner">
+      <span>// GUITAR ▮ DRAWING ▮ MUSIC ▮ NO LIMITS ▮ GUITAR ▮ DRAWING ▮ MUSIC ▮ NO LIMITS ▮ GUITAR ▮ DRAWING ▮ MUSIC ▮ NO LIMITS</span>
+    </div></div>
   </div>
 
   <!-- ═══════════════ 1) ส่วนหัว ═══════════════ -->
   <header class="hero">
     <div class="hero-text">
-      <p class="tag">✦ ~ online now ~ ✦</p>
+      <p class="tag">&gt; USER_PROFILE LOADED_</p>
       <!-- ✏️ แก้ชื่อของคุณ -->
-      <h1>hi, i'm<br><span class="chrome">ชื่อของคุณ</span></h1>
+      <h1>I'M <span class="metal">ชื่อของคุณ</span></h1>
       <!-- ✏️ แก้ประโยคแนะนำสั้น ๆ -->
-      <p class="subtitle">คนรักเสียงดนตรี กีต้าร์ และการวาดรูป ✧˖°</p>
-      <a class="btn" href="#about">enter my world »</a>
+      <p class="subtitle">เล่นกีต้าร์ วาดรูป ฟังเพลงดัง ๆ ใช้ชีวิตให้สุด</p>
+      <div class="hero-btns">
+        <a class="btn" href="#about">ENTER »</a>
+        <a class="btn ghost" href="#contact">CONTACT</a>
+      </div>
     </div>
 
-    <!-- แผ่น CD หมุน (ไม่ต้องแก้) -->
-    <div class="cd"><div class="hole"></div></div>
-
-    <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span><span class="spark s4">★</span>
+    <!-- แผ่นดิสก์เมทัลหมุน (ไม่ต้องแก้) -->
+    <div class="disc"><div class="ring"></div><div class="hole"></div></div>
   </header>
 
   <main>
 
     <!-- ═══════════════ 2) เกี่ยวกับฉัน ═══════════════ -->
-    <section class="window" id="about">
-      <div class="titlebar"><span>about_me.exe</span><div class="wbtns"><i>–</i><i>□</i><i>×</i></div></div>
-      <div class="win-body about-grid">
+    <section class="panel" id="about">
+      <div class="panel-head"><b>01</b> // PROFILE</div>
+      <div class="panel-body about-grid">
 
         <!-- ✏️ เปลี่ยนรูป: ใส่ไฟล์รูปในโฟลเดอร์ images แล้วแก้ชื่อไฟล์ตรง url('...') -->
         <figure class="frame">
           <div class="photo" style="background-image:url('images/me.jpg')"><em>ใส่รูปของคุณ<br>images/me.jpg</em></div>
-          <figcaption>✧ that's me ✧</figcaption>
+          <figcaption>ID: 001 // ME</figcaption>
         </figure>
 
-        <div class="about-text">
+        <div>
           <!-- ✏️ แก้ข้อมูลส่วนตัวตรงนี้ -->
-          <p>ฉันชื่อ <b>ชื่อของคุณ</b> อายุ <b>00</b> ปี</p>
-          <p>อาศัยอยู่ที่ <b>เมืองของคุณ</b></p>
-          <p>ชอบใช้เวลาว่างไปกับการเล่นกีต้าร์ วาดรูป และฟังเพลงให้ดังที่สุด ชีวิตคือมิกซ์เทปที่ยังไม่จบ</p>
-          <div class="stickers">
-            <!-- ✏️ แท็กเล็ก ๆ แก้/เพิ่ม/ลบได้ -->
-            <span>🎸 guitar</span><span>✏️ artist</span><span>🎧 music lover</span><span>🦋 dreamer</span>
-          </div>
+          <table class="specs">
+            <tr><th>NAME</th><td>ชื่อของคุณ</td></tr>
+            <tr><th>AGE</th><td>00</td></tr>
+            <tr><th>BASE</th><td>เมืองของคุณ</td></tr>
+            <tr><th>CLASS</th><td>Guitarist / Artist</td></tr>
+            <tr><th>STATUS</th><td><span class="live">ONLINE</span></td></tr>
+          </table>
+          <p class="bio">ชอบใช้เวลาว่างไปกับการเล่นกีต้าร์ วาดรูป และฟังเพลงให้ดังที่สุด เสียงดนตรีคือพลังงานของฉัน</p>
         </div>
       </div>
     </section>
 
     <!-- ═══════════════ 3) งานอดิเรก ═══════════════ -->
-    <h2><span class="chrome">my favorite things</span></h2>
-    <section class="cards">
+    <section class="panel">
+      <div class="panel-head"><b>02</b> // SKILLS &amp; HOBBIES</div>
+      <div class="panel-body cards">
 
-      <!-- ✏️ แต่ละการ์ดแก้ emoji / ชื่อ / คำอธิบายได้เลย อยากเพิ่มก็ก๊อปบล็อก <article> ไปวางต่อ -->
-      <article class="card c-pink">
-        <div class="icon">🎸</div>
-        <h3>เล่นกีต้าร์</h3>
-        <p>เล่นอะคูสติกทุกเย็น ชอบคอร์ดง่าย ๆ ที่ฟังแล้วอุ่นใจ</p>
-      </article>
+        <!-- ✏️ แก้ emoji / ชื่อ / คำอธิบาย และปรับระดับได้ที่ --lv (0%-100%)
+             อยากเพิ่มก็ก๊อปบล็อก <article> ไปวางต่อ -->
+        <article class="card">
+          <span class="num">01</span>
+          <div class="icon">🎸</div>
+          <h3>GUITAR</h3>
+          <p>เล่นกีต้าร์ทุกวัน ตั้งแต่อะคูสติกยันไฟฟ้า</p>
+          <div class="bar" style="--lv:85%"><i></i></div>
+        </article>
 
-      <article class="card c-blue">
-        <div class="icon">✏️</div>
-        <h3>วาดรูป</h3>
-        <p>ดินสอ ปากกา และสีน้ำ พกสมุดสเก็ตช์ติดตัวเสมอ</p>
-      </article>
+        <article class="card">
+          <span class="num">02</span>
+          <div class="icon">✏️</div>
+          <h3>DRAWING</h3>
+          <p>สเก็ตช์ ลายเส้น และงานดาร์กโทนเท่ ๆ</p>
+          <div class="bar" style="--lv:75%"><i></i></div>
+        </article>
 
-      <article class="card c-lilac">
-        <div class="icon">🎧</div>
-        <h3>ฟังเพลง</h3>
-        <p>โฟล์ค ป๊อป และเพลงยุค 2000 ที่ฟังกี่ทีก็ไม่เบื่อ</p>
-      </article>
+        <article class="card">
+          <span class="num">03</span>
+          <div class="icon">🎧</div>
+          <h3>LISTENING</h3>
+          <p>ร็อก เมทัล อัลเทอร์เนทีฟ ฟังได้ทั้งวัน</p>
+          <div class="bar" style="--lv:95%"><i></i></div>
+        </article>
 
-      <article class="card c-mint">
-        <div class="icon">💿</div>
-        <h3>สะสมแผ่นเพลง</h3>
-        <p>ซีดี เทป และแผ่นเสียง ฟังไปวาดไปได้ทั้งวัน</p>
-      </article>
+        <article class="card">
+          <span class="num">04</span>
+          <div class="icon">💿</div>
+          <h3>COLLECTING</h3>
+          <p>สะสมแผ่นซีดี เทป และแผ่นเสียงเก่า ๆ</p>
+          <div class="bar" style="--lv:60%"><i></i></div>
+        </article>
 
+      </div>
     </section>
 
     <!-- ═══════════════ 4) เพลงโปรด ═══════════════ -->
-    <section class="window player">
-      <div class="titlebar"><span>now_playing.mp3</span><div class="wbtns"><i>–</i><i>□</i><i>×</i></div></div>
-      <div class="win-body">
+    <section class="panel">
+      <div class="panel-head"><b>03</b> // NOW PLAYING</div>
+      <div class="panel-body">
         <div class="display">
-          <div class="eq"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
-          <div class="marquee-text">♪ my top playlist ♪ now playing ♪</div>
+          <div class="eq"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+          <div class="led">▶ MY TOP PLAYLIST</div>
         </div>
         <div class="progress"><div></div></div>
 
@@ -116,37 +131,43 @@
     </section>
 
     <!-- ═══════════════ 5) ผลงานวาดรูป ═══════════════ -->
-    <h2><span class="chrome">my sketchbook</span></h2>
-    <section class="gallery">
+    <section class="panel">
+      <div class="panel-head"><b>04</b> // GALLERY</div>
+      <div class="panel-body gallery">
 
-      <!-- ✏️ เปลี่ยนรูปงานวาด: ใส่ไฟล์ในโฟลเดอร์ images แล้วแก้ชื่อไฟล์ -->
-      <figure class="frame">
-        <div class="photo" style="background-image:url('images/art1.jpg')"><em>art1.jpg</em></div>
-        <figcaption>ชื่อผลงาน 1</figcaption>
-      </figure>
+        <!-- ✏️ เปลี่ยนรูปงานวาด: ใส่ไฟล์ในโฟลเดอร์ images แล้วแก้ชื่อไฟล์ -->
+        <figure class="frame">
+          <div class="photo" style="background-image:url('images/art1.jpg')"><em>art1.jpg</em></div>
+          <figcaption>FILE_01 // ชื่อผลงาน</figcaption>
+        </figure>
 
-      <figure class="frame">
-        <div class="photo" style="background-image:url('images/art2.jpg')"><em>art2.jpg</em></div>
-        <figcaption>ชื่อผลงาน 2</figcaption>
-      </figure>
+        <figure class="frame">
+          <div class="photo" style="background-image:url('images/art2.jpg')"><em>art2.jpg</em></div>
+          <figcaption>FILE_02 // ชื่อผลงาน</figcaption>
+        </figure>
 
-      <figure class="frame">
-        <div class="photo" style="background-image:url('images/art3.jpg')"><em>art3.jpg</em></div>
-        <figcaption>ชื่อผลงาน 3</figcaption>
-      </figure>
+        <figure class="frame">
+          <div class="photo" style="background-image:url('images/art3.jpg')"><em>art3.jpg</em></div>
+          <figcaption>FILE_03 // ชื่อผลงาน</figcaption>
+        </figure>
 
+      </div>
     </section>
 
   </main>
 
   <!-- ═══════════════ 6) ติดต่อ ═══════════════ -->
-  <footer>
-    <h2><span class="chrome">contact me</span></h2>
-    <!-- ✏️ แก้ช่องทางติดต่อ -->
-    <p>✉️ <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>📷 <a href="https://instagram.com/yourname">@yourname</a></p>
-    <div class="badges"><span>best viewed in 1024×768</span><span>♪ music on ♪</span><span>© 2000-ish</span></div>
-    <small>made with love, guitar &amp; a pencil ✧</small>
+  <footer id="contact">
+    <div class="panel">
+      <div class="panel-head"><b>05</b> // CONTACT</div>
+      <div class="panel-body terminal">
+        <!-- ✏️ แก้ช่องทางติดต่อ -->
+        <p><span>&gt;</span> email : <a href="mailto:you@example.com">you@example.com</a></p>
+        <p><span>&gt;</span> ig    : <a href="https://instagram.com/yourname">@yourname</a></p>
+        <p><span>&gt;</span> status: <b class="live">OPEN FOR CHAT</b><i class="cursor">_</i></p>
+      </div>
+    </div>
+    <div class="badges"><span>BEST VIEWED 1024×768</span><span>♪ VOLUME MAX</span><span>© 2000-ISH</span></div>
   </footer>
 
 </body>
