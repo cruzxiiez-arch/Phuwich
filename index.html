@@ -3,172 +3,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ✏️ แก้ชื่อที่โชว์บนแท็บเบราว์เซอร์ -->
-  <title>// PERSONAL_FILE.EXE</title>
+  <title>PHUWICH // Y2K PROFILE</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- ฟอนต์แนว Y2K / Cyber / ภาษาไทยเท่ๆ -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Share+Tech+Mono&family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,700&family=Orbitron:wght@600;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- เส้นสแกนหน้าจอ CRT สไตล์ Y2K -->
+  <div class="scanlines"></div>
 
-  <!-- แถบสถานะด้านบน -->
-  <div class="statusbar">
-    <span class="dot"></span>
-    <!-- ✏️ แก้ข้อความแถบสถานะ -->
-    <span>SYSTEM ONLINE</span>
-    <div class="ticker"><div class="ticker-inner">
-      <span>// GUITAR ▮ DRAWING ▮ MUSIC ▮ NO LIMITS ▮ GUITAR ▮ DRAWING ▮ MUSIC ▮ NO LIMITS ▮ GUITAR ▮ DRAWING ▮ MUSIC ▮ NO LIMITS</span>
-    </div></div>
+  <div class="y2k-wrapper">
+    <!-- แถบ Status ด้านบนสุด -->
+    <header class="top-bar">
+      <div class="sys-status">
+        <span class="blink-dot"></span> SYSTEM ONLINE // Y2K_ARCHIVE_v2.6
+      </div>
+      <div class="sys-tags">
+        <span>[THAILAND]</span>
+        <span>[ID: 41]</span>
+      </div>
+    </header>
+
+    <!-- แถบข้อความวิ่ง (Marquee) -->
+    <div class="marquee-box">
+      <div class="marquee-track">
+        <span>/// GUITAR RIFFS &amp; DROP TUNINGS /// SKETCHBOOK &amp; GRAPHIC ART /// HEAVY ROCK &amp; NU-METAL PLAYLIST /// DIY &amp; CODE /// WELCOME TO MY SPACE ///</span>
+        <span>/// GUITAR RIFFS &amp; DROP TUNINGS /// SKETCHBOOK &amp; GRAPHIC ART /// HEAVY ROCK &amp; NU-METAL PLAYLIST /// DIY &amp; CODE /// WELCOME TO MY SPACE ///</span>
+      </div>
+    </div>
+
+    <!-- ส่วนหลัก (Grid 2 ฝั่ง) -->
+    <main class="main-grid">
+      
+      <!-- ฝั่งซ้าย: โปรไฟล์ + เครื่องเล่นเพลง Y2K -->
+      <aside class="left-panel">
+        <div class="y2k-card profile-card">
+          <div class="card-header">
+            <span>USER_PROFILE.EXE</span>
+            <span class="win-controls">_ □ ×</span>
+          </div>
+          
+          <div class="avatar-frame">
+            <!-- เปลี่ยน src เป็นรูปตัวเองได้ เช่น src="me.jpg" -->
+            <div class="avatar-placeholder">
+              <span class="crosshair">+</span>
+              <p>NO SIGNAL // ADD PHOTO</p>
+              <small>(ใส่รูปโปรไฟล์ตรงนี้)</small>
+            </div>
+            <div class="corner-tag">RAW // 00</div>
+          </div>
+
+          <div class="profile-info">
+            <h1 class="glitch-name" data-text="PHUWICH">PHUWICH</h1>
+            <p class="subtitle">GUITARIST • ILLUSTRATOR • MUSIC HEAD</p>
+            
+            <div class="stat-bars">
+              <div class="stat-row">
+                <span>GUITAR / RIFFS</span>
+                <div class="bar"><div class="fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="stat-row">
+                <span>DRAWING / ART</span>
+                <div class="bar"><div class="fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="stat-row">
+                <span>MUSIC VOLUME</span>
+                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- กล่องเครื่องเล่นเพลง Winamp / Y2K -->
+        <div class="y2k-card player-card">
+          <div class="card-header">
+            <span>AUDIO_DECK.MP3</span>
+            <span class="red-badge">STEREO</span>
+          </div>
+          <div class="player-screen">
+            <div class="track-info">
+              <span class="now-playing">NOW SPINNING:</span>
+              <div class="track-title">01. HEAVY DISTORTION &amp; LATE NIGHT SKETCH.mp3</div>
+            </div>
+            <div class="equalizer">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="player-controls">
+            <button type="button" class="y2k-btn">⏮</button>
+            <button type="button" class="y2k-btn active">▶ PLAY</button>
+            <button type="button" class="y2k-btn">⏸</button>
+            <button type="button" class="y2k-btn">⏭</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ฝั่งขวา: แนะนำตัว + ความชอบ 4 ด้าน -->
+      <section class="right-panel">
+        <div class="y2k-card bio-card">
+          <div class="card-header">
+            <span>README.TXT // ABOUT ME</span>
+            <span>[READ-ONLY]</span>
+          </div>
+          <div class="bio-content">
+            <h2>หวัดดี, ยินดีต้อนรับสู่พื้นที่ของผม <span class="accent-red">//</span></h2>
+            <p>
+              คนที่ใช้ชีวิตอยู่กับเสียงกีตาร์แตกๆ สมุดสเก็ตช์ภาพ และหูฟังที่เปิดเพลงแทบทั้งวัน 
+              ชอบอะไรที่ดูดิบ เท่ มีเอกลักษณ์ ไม่ซ้ำใคร ทั้งงานวาดลายเส้น ดนตรีร็อก/เมทัล 
+              ไปจนถึงการสร้างโปรเจกต์และดีไซน์สไตล์ยุค 2000s
+            </p>
+            <div class="tag-cloud">
+              <span class="y2k-tag">#Y2K_AESTHETIC</span>
+              <span class="y2k-tag">#ELECTRIC_GUITAR</span>
+              <span class="y2k-tag">#SKETCHBOOK</span>
+              <span class="y2k-tag">#NU_METAL</span>
+              <span class="y2k-tag">#STREET_GRUNGE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- การ์ดความชอบ 4 หมวด -->
+        <div class="hobbies-grid">
+          <div class="y2k-card hobby-box">
+            <div class="hobby-num">01 // INSTRUMENT</div>
+            <h3>เล่นกีตาร์ (GUITAR)</h3>
+            <p>สายริฟฟ์หนักๆ ซ้อมแกะเพลง ปรับเสียงเอฟเฟกต์ ลองตั้งสาย Drop ต่างๆ เพื่อหาซาวด์ที่ดุดันและเข้ามือที่สุด</p>
+          </div>
+
+          <div class="y2k-card hobby-box">
+            <div class="hobby-num">02 // VISUAL ART</div>
+            <h3>วาดรูป &amp; ออกแบบ (DRAWING)</h3>
+            <p>ชอบวาดภาพสเก็ตช์ คาแรกเตอร์ โลโก้ และงานกราฟิกแนวสตรีท-กรันจ์ ปลดปล่อยไอเดียลงกระดาษและหน้าจอ</p>
+          </div>
+
+          <div class="y2k-card hobby-box">
+            <div class="hobby-num">03 // SOUNDTRACK</div>
+            <h3>ฟังเพลง (MUSIC)</h3>
+            <p>ฟังเพลงตลอดเวลา ตั้งแต่ Rock, Nu-Metal, Alternative ยันเพลงยุค 90s–2000s เพลงคือเชื้อเพลิงหลักของทุกวัน</p>
+          </div>
+
+          <div class="y2k-card hobby-box">
+            <div class="hobby-num">04 // JAMMING</div>
+            <h3>เล่นดนตรี (PLAYING MUSIC)</h3>
+            <p>สนุกกับการจับจังหวะ แจมดนตรี สร้างซาวด์ใหม่ๆ และซึมซับฟีลลิ่งของการเล่นดนตรีสด</p>
+          </div>
+        </div>
+
+        <!-- แถบติดต่อ / ลิงก์ -->
+        <div class="y2k-card contact-card">
+          <div class="card-header">
+            <span>CONNECT_LINKS.DAT</span>
+            <span>[ONLINE]</span>
+          </div>
+          <div class="social-links">
+            <a href="#" class="link-btn">GITHUB ↗</a>
+            <a href="#" class="link-btn">INSTAGRAM ↗</a>
+            <a href="#" class="link-btn">SPOTIFY PLAYLIST ↗</a>
+            <a href="#" class="link-btn">FACEBOOK ↗</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bottom-bar">
+      <span>© 2026 PHUWICH // BUILT WITH HTML &amp; CSS</span>
+      <span>THEME: METALLIC GREY × CRIMSON RED</span>
+    </footer>
   </div>
-
-  <!-- ═══════════════ 1) ส่วนหัว ═══════════════ -->
-  <header class="hero">
-    <div class="hero-text">
-      <p class="tag">&gt; USER_PROFILE LOADED_</p>
-      <!-- ✏️ แก้ชื่อของคุณ -->
-      <h1>I'M <span class="metal">ชื่อของคุณ</span></h1>
-      <!-- ✏️ แก้ประโยคแนะนำสั้น ๆ -->
-      <p class="subtitle">เล่นกีต้าร์ วาดรูป ฟังเพลงดัง ๆ ใช้ชีวิตให้สุด</p>
-      <div class="hero-btns">
-        <a class="btn" href="#about">ENTER »</a>
-        <a class="btn ghost" href="#contact">CONTACT</a>
-      </div>
-    </div>
-
-    <!-- แผ่นดิสก์เมทัลหมุน (ไม่ต้องแก้) -->
-    <div class="disc"><div class="ring"></div><div class="hole"></div></div>
-  </header>
-
-  <main>
-
-    <!-- ═══════════════ 2) เกี่ยวกับฉัน ═══════════════ -->
-    <section class="panel" id="about">
-      <div class="panel-head"><b>01</b> // PROFILE</div>
-      <div class="panel-body about-grid">
-
-        <!-- ✏️ เปลี่ยนรูป: ใส่ไฟล์รูปในโฟลเดอร์ images แล้วแก้ชื่อไฟล์ตรง url('...') -->
-        <figure class="frame">
-          <div class="photo" style="background-image:url('images/me.jpg')"><em>ใส่รูปของคุณ<br>images/me.jpg</em></div>
-          <figcaption>ID: 001 // ME</figcaption>
-        </figure>
-
-        <div>
-          <!-- ✏️ แก้ข้อมูลส่วนตัวตรงนี้ -->
-          <table class="specs">
-            <tr><th>NAME</th><td>ชื่อของคุณ</td></tr>
-            <tr><th>AGE</th><td>00</td></tr>
-            <tr><th>BASE</th><td>เมืองของคุณ</td></tr>
-            <tr><th>CLASS</th><td>Guitarist / Artist</td></tr>
-            <tr><th>STATUS</th><td><span class="live">ONLINE</span></td></tr>
-          </table>
-          <p class="bio">ชอบใช้เวลาว่างไปกับการเล่นกีต้าร์ วาดรูป และฟังเพลงให้ดังที่สุด เสียงดนตรีคือพลังงานของฉัน</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════ 3) งานอดิเรก ═══════════════ -->
-    <section class="panel">
-      <div class="panel-head"><b>02</b> // SKILLS &amp; HOBBIES</div>
-      <div class="panel-body cards">
-
-        <!-- ✏️ แก้ emoji / ชื่อ / คำอธิบาย และปรับระดับได้ที่ --lv (0%-100%)
-             อยากเพิ่มก็ก๊อปบล็อก <article> ไปวางต่อ -->
-        <article class="card">
-          <span class="num">01</span>
-          <div class="icon">🎸</div>
-          <h3>GUITAR</h3>
-          <p>เล่นกีต้าร์ทุกวัน ตั้งแต่อะคูสติกยันไฟฟ้า</p>
-          <div class="bar" style="--lv:85%"><i></i></div>
-        </article>
-
-        <article class="card">
-          <span class="num">02</span>
-          <div class="icon">✏️</div>
-          <h3>DRAWING</h3>
-          <p>สเก็ตช์ ลายเส้น และงานดาร์กโทนเท่ ๆ</p>
-          <div class="bar" style="--lv:75%"><i></i></div>
-        </article>
-
-        <article class="card">
-          <span class="num">03</span>
-          <div class="icon">🎧</div>
-          <h3>LISTENING</h3>
-          <p>ร็อก เมทัล อัลเทอร์เนทีฟ ฟังได้ทั้งวัน</p>
-          <div class="bar" style="--lv:95%"><i></i></div>
-        </article>
-
-        <article class="card">
-          <span class="num">04</span>
-          <div class="icon">💿</div>
-          <h3>COLLECTING</h3>
-          <p>สะสมแผ่นซีดี เทป และแผ่นเสียงเก่า ๆ</p>
-          <div class="bar" style="--lv:60%"><i></i></div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ═══════════════ 4) เพลงโปรด ═══════════════ -->
-    <section class="panel">
-      <div class="panel-head"><b>03</b> // NOW PLAYING</div>
-      <div class="panel-body">
-        <div class="display">
-          <div class="eq"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
-          <div class="led">▶ MY TOP PLAYLIST</div>
-        </div>
-        <div class="progress"><div></div></div>
-
-        <!-- ✏️ แก้ชื่อเพลง / ศิลปิน ได้เลย (ก๊อปบรรทัด <li> เพื่อเพิ่มเพลง) -->
-        <ol class="tracks">
-          <li><span>ชื่อเพลง 1</span><em>ศิลปิน</em></li>
-          <li><span>ชื่อเพลง 2</span><em>ศิลปิน</em></li>
-          <li><span>ชื่อเพลง 3</span><em>ศิลปิน</em></li>
-          <li><span>ชื่อเพลง 4</span><em>ศิลปิน</em></li>
-          <li><span>ชื่อเพลง 5</span><em>ศิลปิน</em></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ═══════════════ 5) ผลงานวาดรูป ═══════════════ -->
-    <section class="panel">
-      <div class="panel-head"><b>04</b> // GALLERY</div>
-      <div class="panel-body gallery">
-
-        <!-- ✏️ เปลี่ยนรูปงานวาด: ใส่ไฟล์ในโฟลเดอร์ images แล้วแก้ชื่อไฟล์ -->
-        <figure class="frame">
-          <div class="photo" style="background-image:url('images/art1.jpg')"><em>art1.jpg</em></div>
-          <figcaption>FILE_01 // ชื่อผลงาน</figcaption>
-        </figure>
-
-        <figure class="frame">
-          <div class="photo" style="background-image:url('images/art2.jpg')"><em>art2.jpg</em></div>
-          <figcaption>FILE_02 // ชื่อผลงาน</figcaption>
-        </figure>
-
-        <figure class="frame">
-          <div class="photo" style="background-image:url('images/art3.jpg')"><em>art3.jpg</em></div>
-          <figcaption>FILE_03 // ชื่อผลงาน</figcaption>
-        </figure>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ═══════════════ 6) ติดต่อ ═══════════════ -->
-  <footer id="contact">
-    <div class="panel">
-      <div class="panel-head"><b>05</b> // CONTACT</div>
-      <div class="panel-body terminal">
-        <!-- ✏️ แก้ช่องทางติดต่อ -->
-        <p><span>&gt;</span> email : <a href="mailto:you@example.com">you@example.com</a></p>
-        <p><span>&gt;</span> ig    : <a href="https://instagram.com/yourname">@yourname</a></p>
-        <p><span>&gt;</span> status: <b class="live">OPEN FOR CHAT</b><i class="cursor">_</i></p>
-      </div>
-    </div>
-    <div class="badges"><span>BEST VIEWED 1024×768</span><span>♪ VOLUME MAX</span><span>© 2000-ISH</span></div>
-  </footer>
-
 </body>
 </html>
